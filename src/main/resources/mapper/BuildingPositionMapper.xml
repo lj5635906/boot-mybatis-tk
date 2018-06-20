@@ -1,0 +1,18 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.BuildingPositionMapper">
+    <resultMap type="com.example.domain.BuildingPosition" id="buildingPositionResultMap">
+		<id column="id" property="id" />
+	    <result column="developer_id" property="developerId" />
+	    <result column="operation_area_id" property="operationAreaId" />
+	    <result column="building_id" property="buildingId" />
+	    <result column="parent_id" property="parentId" />
+	    <result column="position_name" property="positionName" />
+	    <result column="position_alias" property="positionAlias" />
+	    <result column="create_time" property="createTime" />
+	    <result column="update_time" property="updateTime" />
+	    <result column="delete_flag" property="deleteFlag" />
+	</resultMap>
+
+</mapper>

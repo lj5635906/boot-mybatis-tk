@@ -1,0 +1,19 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.CustomerMapper">
+    <resultMap type="com.example.domain.Customer" id="customerResultMap">
+		<id column="id" property="id" />
+	    <result column="mobile" property="mobile" />
+	    <result column="email" property="email" />
+	    <result column="customer_name" property="customerName" />
+	    <result column="customer_password" property="customerPassword" />
+	    <result column="head_image" property="headImage" />
+	    <result column="gender" property="gender" />
+	    <result column="birthday" property="birthday" />
+	    <result column="create_time" property="createTime" />
+	    <result column="update_time" property="updateTime" />
+	    <result column="delete_flag" property="deleteFlag" />
+	</resultMap>
+
+</mapper>
